@@ -1,0 +1,195 @@
+import { StyleSheet } from 'react-native';
+
+export const COLORS = {
+    background: '#1B1F23',
+    backgroundDark: '#000000',
+    card: '#1B1F23',
+    border: '#38434F',
+    textPrimary: '#FFFFFF',
+    textSecondary: '#B0B7BF',
+    textMuted: '#8A9199',
+    link: '#70B5F9',
+    statusGreen: '#057642',
+    verified: '#70B5F9',
+};
+
+export default StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: COLORS.background,
+    },
+    scrollContent: {
+        paddingBottom: 24,
+    },
+    sectionHeader: {
+        paddingHorizontal: 16,
+        paddingTop: 16,
+        paddingBottom: 12,
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: COLORS.border,
+    },
+    sectionTitle: {
+        color: COLORS.textPrimary,
+        fontSize: 16,
+        fontWeight: '700',
+        lineHeight: 22,
+    },
+    sectionSubtitle: {
+        color: COLORS.textSecondary,
+        fontSize: 13,
+        marginTop: 4,
+        lineHeight: 18,
+    },
+    jobCard: {
+        flexDirection: 'row',
+        paddingHorizontal: 16,
+        paddingVertical: 14,
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: COLORS.border,
+    },
+    companyLogo: {
+        width: 48,
+        height: 48,
+        borderRadius: 4,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginRight: 12,
+    },
+    logoText: {
+        color: COLORS.textPrimary,
+        fontSize: 12,
+        fontWeight: '700',
+    },
+    jobContent: {
+        flex: 1,
+        paddingRight: 8,
+    },
+    jobTitleRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 4,
+        paddingRight: 24,
+    },
+    jobTitle: {
+        color: COLORS.textPrimary,
+        fontSize: 15,
+        fontWeight: '700',
+        flex: 1,
+    },
+    companyName: {
+        color: COLORS.textPrimary,
+        fontSize: 14,
+        marginTop: 2,
+    },
+    jobLocation: {
+        color: COLORS.textSecondary,
+        fontSize: 13,
+        marginTop: 2,
+        lineHeight: 18,
+    },
+    statusRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 8,
+    },
+    statusText: {
+        color: COLORS.statusGreen,
+        fontSize: 12,
+        fontWeight: '600',
+        flex: 1,
+    },
+    connectionRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        gap: 6,
+        marginTop: 8,
+    },
+    connectionAvatar: {
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+        backgroundColor: '#4A5568',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    connectionAvatarText: {
+        color: COLORS.textPrimary,
+        fontSize: 8,
+        fontWeight: '700',
+    },
+    connectionText: {
+        color: COLORS.textMuted,
+        fontSize: 12,
+    },
+    jobMeta: {
+        color: COLORS.textMuted,
+        fontSize: 11,
+        marginTop: 8,
+        lineHeight: 16,
+    },
+    dismissButton: {
+        position: 'absolute',
+        top: 14,
+        right: 16,
+        padding: 4,
+    },
+    seeAllButton: {
+        alignItems: 'center',
+        paddingVertical: 16,
+        borderBottomWidth: StyleSheet.hairlineWidth,
+        borderBottomColor: COLORS.border,
+    },
+    seeAllText: {
+        color: COLORS.textPrimary,
+        fontSize: 15,
+        fontWeight: '600',
+    },
+    searchSection: {
+        backgroundColor: COLORS.backgroundDark,
+        paddingHorizontal: 24,
+        paddingTop: 40,
+        paddingBottom: 48,
+        alignItems: 'center',
+    },
+    illustration: {
+        width: 200,
+        height: 140,
+        marginBottom: 24,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    illustrationDesk: {
+        width: 160,
+        height: 100,
+        backgroundColor: '#2A3038',
+        borderRadius: 8,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    illustrationEmoji: {
+        fontSize: 48,
+    },
+    searchTitle: {
+        color: COLORS.textPrimary,
+        fontSize: 20,
+        fontWeight: '700',
+        textAlign: 'center',
+        marginBottom: 10,
+    },
+    searchDescription: {
+        color: COLORS.textSecondary,
+        fontSize: 14,
+        textAlign: 'center',
+        lineHeight: 20,
+        marginBottom: 20,
+    },
+    searchButton: {
+        paddingVertical: 8,
+    },
+    searchButtonText: {
+        color: COLORS.link,
+        fontSize: 16,
+        fontWeight: '700',
+    },
+});
